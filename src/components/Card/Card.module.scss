@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
+  align-items: center;
   gap: 20px;
 }
 
@@ -77,4 +77,17 @@
   background-color: #5ac6ec;
   border: none;
   color: white;
+}
+
+.Wrapper__Filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Wrapper__Card {
+    border: 1px solid red;
+  }
 }
