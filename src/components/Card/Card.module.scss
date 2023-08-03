@@ -2,6 +2,10 @@
   width: 100%;
   height: 100%;
   padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .blueText {
     color: #5ac6ec;
@@ -13,7 +17,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid red;
+
   gap: 20px;
 }
 
@@ -23,7 +27,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: 1px solid red;
 
   button {
     width: 100%;
@@ -64,4 +67,14 @@
 .ArrowSvg {
   position: relative;
   top: 50px;
+}
+
+.showMoreButton {
+  border: 1px solid red;
+  width: 15%;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #5ac6ec;
+  border: none;
+  color: white;
 }

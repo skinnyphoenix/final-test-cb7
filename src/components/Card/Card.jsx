@@ -2,12 +2,20 @@ import styles from "./Card.module.scss";
 import infos from "../../../public/data.json";
 import Image from "next/image";
 
+import { useState } from "react";
+
 const Card = () => {
+  const [visible, setVisible] = useState(8);
+
+  const showMoreItems = () => {
+    setVisible((prevValue) => prevValue + 8);
+  };
+
   return (
     <>
       <div className={styles.Wrapper__Card}>
         <div className={styles.Card__Info}>
-          {infos.map((info) => (
+          {infos.slice(0, visible).map((info) => (
             <div className={styles.Single__Card} key={info.id}>
               <div className={styles.Main__Infos}>
                 <h4>{info.budget.value + "€"} per cabina</h4>
@@ -43,6 +51,9 @@ const Card = () => {
             </div>
           ))}
         </div>
+        <button className={styles.showMoreButton} onClick={showMoreItems}>
+          Mostra altro
+        </button>
       </div>
     </>
   );
