@@ -24,9 +24,7 @@ const Card = () => {
 
               <div className={styles.Wrapper__Trip}>
                 <div className={styles.Info__Departure}>
-                  <h5 className={styles.BoldCard2}>
-                    <h5 className={styles.blueText}>PARTENZA DA</h5>
-                  </h5>
+                  <h5 className={styles.blueText}> PARTENZA DA</h5>
                   <h5 className={styles.BoldCard}>{info.departure.Port}</h5>
                   <br />
                   <h5>{info.departureDate}</h5>
