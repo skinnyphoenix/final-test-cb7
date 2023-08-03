@@ -21,7 +21,6 @@ const Card = () => {
                 <h4>{info.budget.value + "€"} per cabina</h4>
                 <h3>{info.title}</h3>
               </div>
-
               <div className={styles.Wrapper__Trip}>
                 <div className={styles.Info__Departure}>
                   <h5 className={styles.blueText}> PARTENZA DA</h5>
@@ -42,7 +41,6 @@ const Card = () => {
                   <h5>{info.arrivalDate}</h5>
                 </div>
               </div>
-
               <button>
                 <h5>PRENOTA</h5>
               </button>
