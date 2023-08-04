@@ -1,0 +1,93 @@
+.Wrapper__Card {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .blueText {
+    color: #5ac6ec;
+    font-weight: 600;
+  }
+}
+
+.Card__Info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.Single__Card {
+  width: 30%;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #273049;
+    border: none;
+
+    h5 {
+      color: white;
+    }
+  }
+  .Main__Infos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+    width: 100%;
+  }
+
+  .Wrapper__Trip {
+    display: flex;
+    gap: 20px;
+
+    .Info__Departure {
+      width: 50%;
+    }
+
+    .Arrival__Infos {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      width: 50%;
+    }
+  }
+}
+
+.ArrowSvg {
+  position: relative;
+  top: 50px;
+}
+
+.showMoreButton {
+  border: 1px solid red;
+  width: 15%;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #5ac6ec;
+  border: none;
+  color: white;
+}
+
+.Wrapper__Filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Wrapper__Card {
+    border: 1px solid red;
+  }
+}
